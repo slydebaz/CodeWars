@@ -1,6 +1,6 @@
 ﻿namespace CodeWars
 {
-    public static class Kata
+    public static class GravityFlip
     {
       
         public static int[] Flip(char dir, int[] arr)
@@ -12,7 +12,7 @@
             {
                 arr = numbers.OrderBy(x => x).ToArray();
             }
-            else
+            else if(dir == 'L')
             {
                 arr = numbers.OrderByDescending(x => x).ToArray();
             }
