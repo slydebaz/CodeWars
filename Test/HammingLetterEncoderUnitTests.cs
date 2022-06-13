@@ -6,7 +6,7 @@ namespace Test
     public class HammingLetterEncoderUnitTests
     {
         [Test]
-        public void Should_Get_Ascii_Value_From_Character()
+        public void T0_Should_Get_Ascii_Value_From_Character()
         {
             var h = new HammingLetterEncoder('h');
 
@@ -15,7 +15,7 @@ namespace Test
         }
 
         [Test]
-        public void Should_Get_Binary_Value_From_Character()
+        public void T1_Should_Get_Binary_Value_From_Character()
         {
             var h = new HammingLetterEncoder('h');
             Assert.AreEqual("01101000", h.EncodeBinary());
@@ -29,7 +29,7 @@ namespace Test
         }
 
         [Test]
-        public void Should_Triple_Value_From_Character()
+        public void T2_Should_Triple_Value_From_Character()
         {
             var h = new HammingLetterEncoder('h');
             Assert.AreEqual("000111111000111000000000", h.EncodeTriple());

@@ -73,7 +73,7 @@ namespace Test
         }
 
         [Test]
-        public void T2_Should_Get_Binary_Representation_Of_the_corrected_string()
+        public void T2_Should_Get_corrected_binary_formatted_string()
         {
             var h = new HammingLetterDecoder(
                 "000" +
@@ -93,7 +93,7 @@ namespace Test
         }
 
         [Test]
-        public void T3_Should_Get_ASCII_Representation_of_the_binary_string()
+        public void T3_Should_Get_ASCII_from_the_binary_corrected_string()
         {
             var h = new HammingLetterDecoder(
                 "000" +

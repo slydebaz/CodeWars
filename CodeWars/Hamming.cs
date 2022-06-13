@@ -5,6 +5,11 @@ namespace CodeWars
 
     public class Hamming
     {
+        /// <summary>
+        /// Encode string using hamming algorithm
+        /// </summary>
+        /// <param name="v"></param>
+        /// <returns></returns>
         public string Encode(string v)
         {
             List<HammingLetterEncoder> _encoder = new List<HammingLetterEncoder>();
@@ -17,7 +22,7 @@ namespace CodeWars
                 _encoder.Add(new HammingLetterEncoder(chars[i]));
             }
 
-            string results = "";
+            string results = String.Empty;
             _encoder.ForEach(x =>
             {
                 results += x.EncodeTriple();
@@ -27,6 +32,11 @@ namespace CodeWars
 
         }
 
+        /// <summary>
+        /// Decode string in a binary format using Hamming algorithm
+        /// </summary>
+        /// <param name="v">string in binary format</param>
+        /// <returns></returns>
         public string Decode(string v)
         {
             string decoded = string.Empty;
@@ -59,14 +69,6 @@ namespace CodeWars
            
             return decoded;
         }
-
-        //public string Decode(string v)
-        //{
-        //    var decoder = new HammingLetterDecoder(v);
-        //    return decoder.Convert();
-        //}
     }
-
-
 
 }
